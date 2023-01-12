@@ -1,0 +1,17 @@
+.main {
+}
+#navigate {
+  background-color: var(--primary-color);
+  display: flex;
+}
+.navigate--logo {
+display: block;
+}
+.navigate--items {
+  display: inline-flex;
+  justify-content: space-between;
+}
+.navigate--items li {
+    min-height: 100px;
+    text-align: center;
+}

@@ -1,0 +1,12 @@
+.main{
+
+}
+#navigate{
+    background-color: var(--primary-color);
+}
+.navigate--logo{
+
+}
+.navigate--items{
+display: inline-flex;
+}

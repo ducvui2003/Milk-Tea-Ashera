@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+html, body{
+    height: 100%;
+}
+
+.main {
+    height: 100%;
+}
+.login {
+   
+   height: 100%;
+   background-color: yellow;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.login__frame {
+    background-color: white;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  padding: 35px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+.logo img {
+  width: fit-content;
+}
+.logo p {
+  display: inline-block;
+}
+.login__input {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+.login__frame .login__input:nth-child(2) {
+  margin-bottom: 30px;
+}
+.login__input p {
+}
+.login__input input {
+  display: inline-block;
+  width: 100%;
+
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.login__forgetPassword {
+    width: 100%;
+  display: block;
+  text-align: right;
+  margin: 15px 35px 15px 0;
+  text-decoration: none;
+}
+
+.login__button {
+}
+.login__registry {
+}
+.login__social {
+}
+.box {
+}
+.fa-brands {
+}
+.fa-google {
+}
+.fa-twitter {
+}
+.fa-facebook-f {
+}
+.roboto__18px {
+}

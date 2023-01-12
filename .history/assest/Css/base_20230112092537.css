@@ -1,0 +1,46 @@
+:root {
+  --primary-color: #efca96;
+  --primary-color-low: #ffe4c3;
+  --secondary-color: #5e442e;
+  --primary-text: #000;
+  --primary-text-low: rgba(0, 0, 0, 0.5);
+  --secondary-text: #fff;
+  --red: #ff0a0a;
+  --blue: 3244EF;
+  --blue-low: #0476fc;
+  --blue-medium: #0476fc;
+  --orange: #f27400;
+  /* Font */
+  --roboto-font: "Roboto", sans-serif;
+  --lora-font: "Lora", serif;
+}
+/* Optimize for display text */
+body {
+  text-rendering: optimizeSpeed;
+  -webkit-font-smooth: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Logo */
+.logo {
+  width: 60px;
+  height: 60px;
+  padding: 16px;
+  box-sizing: content-box;
+  border-radius: 50%;
+  border: 2px solid #000;
+  background-color: white;
+  z-index: 2;
+}
+.logo a {
+  display: block;
+  height: 100%;
+  background-image: url(../img/logo.svg);
+  background-position: center center;
+  background-size: 100%;
+}

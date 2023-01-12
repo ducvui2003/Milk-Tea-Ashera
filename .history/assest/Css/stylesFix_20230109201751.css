@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+.main {
+}
+#navigate {
+  background-color: var(--primary-color);
+  display: flex;
+  padding: 16px 32px;
+}
+.navigate--logo {
+display: block;
+border-radius: 50%;
+border: 2px solid #000;
+display: flex;
+margin-right: 20px;
+}
+.navigate--logo img{
+justify-content: center;
+}
+.navigate--items {
+  display: inline-flex;
+  justify-content: space-between;
+
+  flex: 1;
+}
+.navigate--items li {
+    min-height: 100px;
+    text-align: center;
+}

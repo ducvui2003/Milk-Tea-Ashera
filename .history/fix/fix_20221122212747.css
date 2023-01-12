@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+
+.main {
+  height: 100%;
+}
+.login {
+  height: 100%;
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login__frame {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  padding: 35px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+.logo img {
+  width: fit-content;
+}
+.logo p {
+  display: inline-block;
+}
+.login__input {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+.login__frame .login__input:nth-child(2) {
+  margin-bottom: 30px;
+}
+.login__input p {
+}
+.login__input input {
+  display: inline-block;
+  width: 100%;
+
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.login__forgetPassword {
+  display: block;
+  text-align: right;
+  margin: 15px 0;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  text-align: right;
+  text-decoration: none;
+  color: var(--primary-text);
+}
+
+.login__frame .login__button {
+  display: block;
+  width: 100%;
+  border-radius: 20px;
+  padding: 5px;
+  background-color: var(--secondary-color);
+  color: var(--secondary-text);
+}
+.login__frame .login__registry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  margin-inline: auto;
+  margin-top: 26px;
+  text-align: center;
+}
+.login__frame .login__registry a {
+  text-decoration: none;
+  color: var(--primary-text);
+}
+
+.login__frame .login__social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  margin: 26px;
+  width: 80%;
+}
+.fa-google {
+  background: conic-gradient(
+      from -45deg,
+      #ea4335 110deg,
+      #4285f4 90deg 180deg,
+      #34a853 180deg 270deg,
+      #fbbc05 270deg
+    )
+    73% 55%/150% 150% no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.fa-twitter {
+  color: #55acee;
+}
+
+.fa-facebook-f {
+  color: #4267b2;
+}
+
+.login__frame .login__social > div {
+  padding: 9px 14px;
+}
+
+.login__frame .login__social > p {
+  color: var(--primary-tex);
+}
+.login__frame .login__social .hover:hover {
+  box-shadow: -5.51724px 5.51724px 5.51724px rgba(0, 0, 0, 0.25),
+    5.51724px 5.51724px 5.51724px rgba(0, 0, 0, 0.52);
+  cursor: pointer;
+}

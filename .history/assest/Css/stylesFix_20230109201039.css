@@ -1,0 +1,14 @@
+.main{
+
+}
+#navigate{
+    background-color: var(--primary-color);
+}
+.navigate--logo{
+
+}
+.navigate--items{
+display: inline-flex;
+}.navigate--item li{
+    
+}

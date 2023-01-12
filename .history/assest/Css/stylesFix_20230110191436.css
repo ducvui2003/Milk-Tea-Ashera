@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+.main {
+}
+#navigate {
+  display: flex;
+  padding: 16px;
+  /* border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px; */
+  background-color: var(--primary-color);
+  font-family: var(--roboto-font);
+  font-weight: 450;
+}
+.navigate--logo {
+  display: flex;
+
+  border-radius: 50%;
+  border: 2px solid #000;
+  background-color: white;
+}
+.navigate--logo img {
+}
+.navigate--items {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}
+.navigate--items li {
+}
+.navigate--items .navigate--button {
+  display: block;
+  min-width: 200px;
+  padding: 8px 16px;
+  text-align: center;
+  font-size: 4rem;
+  color: var(--primary-text);
+}
+.navigate--items .navigate--logo {
+}
+.background {
+  width: 100%;
+  height: 500px;
+  background-image: url(../img/Introduce/heading.png);
+  background-size: 100% 500px;
+  background-repeat: no-repeat;
+}
+.background div {
+}
+#content {
+  padding-inline: 5%;
+}
+
+.heading {
+  display: block;
+  min-width: 100px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid;
+}
+.heading h1 {
+  display: inline-block;
+  background-color: var(--primary-color);
+  padding: 16px 32px;
+  border-radius: 20px;
+  font-family: var(--roboto-font);
+  font-size: 3.2rem;
+  font-weight: 500;
+  align-items: center;
+}
+#content #content--introduce div:nth-child(2) {
+  display: inline-flex;
+  justify-content: center;
+  gap: 40px;
+  font-family: var(--lora-font);
+  font-size: 1.8rem;
+  line-height: 1.5;
+  text-align: justify;
+}
+#content #content--introduce .introduce--imgs {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+#content #content--introduce .introduce--img {
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#content #content--introduce .introduce--img:first-child {
+  background-image: url(../img/Introduce/introduce__img1.png);
+}
+#content #content--introduce .introduce--img:nth-child(2) {
+  background-image: url(../img/Introduce/introduce__img2.png);
+}
+#content #content--introduce .introduce--img:nth-child(3) {
+  background-image: url(../img/Introduce/introduce__img3.png);
+}
+#content #content--introduce .introduce--img:last-child {
+  background-image: url(../img/Introduce/introduce__img4.png);
+}
+
+#content #content--introduce .introduce--desc {
+  flex: 1;
+}
+/* Cats*/
+#content--cats {
+  overflow: hidden;
+}
+.pets {
+  width: 200%;
+  display: flex;
+  gap: 2%;
+}
+.pets .pet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 350px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: brightness(0.5);
+  transition: filter 0.3s ease-in;
+}
+.pets .pet:first-child {
+  background-image: url(../img/Introduce/cat1.png);
+}
+.pets .pet:nth-child(2) {
+  background-image: url(../img/Introduce/cat2.png);
+}
+.pets .pet:nth-child(3) {
+  background-image: url(../img/Introduce/cat3.png);
+}
+.pets .pet:nth-child(4) {
+  background-image: url(../img/Introduce/cat4.png);
+}
+.pets .pet:last-child {
+  background-image: url(../img/Introduce/cat5.png);
+}
+/* .pets .pet.pet__blur:hover{
+ opacity: 0.5;
+} */
+
+.pet .pet--desc {
+  display: none;
+  width: 80%;
+  height: fit-content;
+  text-align: center;
+  color: white;
+}
+.pet .pet--desc h2 {
+  font-family: var(--roboto-font);
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.pet .pet--desc p {
+  font-family: var(--lora-font);
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+.pet.pet__blur:hover .pet--desc {
+  display: inline-block;
+}
+
+.pet.pet__blur:hover {
+  filter: none;
+}
+/* Menu*/
+#content--menu {
+}
+#content--menu .menu--buttons {
+  display: flex;
+  gap: 2%;
+}
+#content--menu .menu--button {
+  flex: 1;
+  display: block;
+  border: 4px solid var(--secondary-color);
+  border-radius: 20px;
+  padding: 14px 0;
+  background-color: white;
+  font-family: var(--roboto-font);
+  font-size: 1.8rem;
+}
