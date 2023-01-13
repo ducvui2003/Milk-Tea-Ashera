@@ -21,7 +21,7 @@ html {
   font-family: var(--roboto-font);
   font-weight: 450;
 }
-#navigate .nav__pc {
+#navigate .nav__pc{
   width: 100%;
 }
 .navigate--items {

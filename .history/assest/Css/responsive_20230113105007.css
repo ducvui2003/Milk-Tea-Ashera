@@ -1,0 +1,22 @@
+@media screen and (min-width: 1920px) {
+  #content {
+    padding-inline: 500px;
+  }
+}
+/* Mobile: width < 740px */
+/*  Tablet: width >=740px and < 1024px */
+/* PC: width>= 1024px */
+@media only screen and (max-width: 46.1875em) {
+}
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+}
+@media only screen and (max-width: 63.9375em) {
+  .nav__mobile-btn {
+    display: block;
+  }
+  .nav__pc {
+    display: none;
+  }
+}
+@media only screen and (max-width: 64em) {
+}

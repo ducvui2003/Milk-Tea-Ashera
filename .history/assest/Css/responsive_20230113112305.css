@@ -17,25 +17,16 @@
   .nav__pc {
     display: none;
   }
-  #navigate{
-    justify-content: right;
-  }
 }
-@media only screen and (min-width: 64em) {
-  .nav__mobile-btn{
-    display: none;
-  }
-
+@media only screen and (max-width: 64em) {
 }
 /* Nav mobile  */
 .nav__mobile-btn {
-  color: var(--secondary-color);
+  color: white;
   font-size: 28px;
-  font-weight: 600;
 }
 .nav__mobile-btn:hover{
 opacity: 0.7;
-cursor: pointer;
 }
 .nav__input {
 }
@@ -53,14 +44,15 @@ cursor: pointer;
 .nav__mobile {
   position: fixed;
   top: 0;
+  left: 0;
   right: 0;
   bottom: 0;
   width: 320px;
   max-width: 100%;
   background-color: var(--primary-color-low);
-  transform: translateX(100%);
+  transform: translateX(-100%);
   opacity: 0;
-  transition: all linear 0.2s;
+  transition: transform linear 0.2s, opacity linear 0.2;
 }
 .nav__mobile .nav__list {
   margin: 16px;

@@ -21,9 +21,7 @@ html {
   font-family: var(--roboto-font);
   font-weight: 450;
 }
-#navigate .nav__pc {
-  width: 100%;
-}
+
 .navigate--items {
   width: 100%;
   display: inline-flex;
@@ -66,7 +64,6 @@ html {
   border-bottom-left-radius: 20px;
 }
 
-/* Content */
 #content {
   padding: 32px 100px;
   display: flex;

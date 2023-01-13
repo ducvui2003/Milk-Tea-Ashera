@@ -53,12 +53,13 @@ cursor: pointer;
 .nav__mobile {
   position: fixed;
   top: 0;
+  left: 0;
   right: 0;
   bottom: 0;
   width: 320px;
   max-width: 100%;
   background-color: var(--primary-color-low);
-  transform: translateX(100%);
+  transform: translateX(-100%);
   opacity: 0;
   transition: all linear 0.2s;
 }

@@ -22,7 +22,7 @@ body {
   text-rendering: optimizeSpeed;
   -webkit-font-smooth: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  margin: 0;
+  pad0
 }
 body::-webkit-scrollbar {
   width: 0px;

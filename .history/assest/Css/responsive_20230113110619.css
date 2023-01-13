@@ -17,25 +17,13 @@
   .nav__pc {
     display: none;
   }
-  #navigate{
-    justify-content: right;
-  }
 }
-@media only screen and (min-width: 64em) {
-  .nav__mobile-btn{
-    display: none;
-  }
-
+@media only screen and (max-width: 64em) {
 }
 /* Nav mobile  */
 .nav__mobile-btn {
-  color: var(--secondary-color);
+  color: white;
   font-size: 28px;
-  font-weight: 600;
-}
-.nav__mobile-btn:hover{
-opacity: 0.7;
-cursor: pointer;
 }
 .nav__input {
 }
@@ -47,20 +35,18 @@ cursor: pointer;
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.3);
-  animation: fadeIn linear 0.2s;
 }
 
 .nav__mobile {
   position: fixed;
   top: 0;
+  left: 0;
   right: 0;
   bottom: 0;
   width: 320px;
   max-width: 100%;
   background-color: var(--primary-color-low);
-  transform: translateX(100%);
-  opacity: 0;
-  transition: all linear 0.2s;
+  transform: translateX(-100%);
 }
 .nav__mobile .nav__list {
   margin: 16px;
@@ -86,27 +72,4 @@ cursor: pointer;
   position: absolute;
   top: 1rem;
   right: 1rem;
-}
-.nav__input {
-  display: none;
-}
-.nav__input:checked ~ .nav__overlay {
-  display: block;
-}
-
-.nav__input:checked ~ .nav__mobile {
-  transform: translateX(0);
-  opacity: 1;
-}
-.nav__mobile-close:hover {
-  opacity: 0.7;
-  cursor: pointer;
-}
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }

@@ -58,7 +58,7 @@ cursor: pointer;
   width: 320px;
   max-width: 100%;
   background-color: var(--primary-color-low);
-  transform: translateX(100%);
+  transform: translateX(-100%);
   opacity: 0;
   transition: all linear 0.2s;
 }
