@@ -28,8 +28,8 @@ body::-webkit-scrollbar {
   width: 0px;
 }
 .heading {
-  max-width: 250px;
-  min-width: 210px;
+  width: fit-content;
+  color: var(--primary-text);
   display: inline-block;
   position: relative;
   left: 50%;
@@ -37,10 +37,10 @@ body::-webkit-scrollbar {
   width: 31.5%;
   margin-block: 32px 16px;
   border-bottom: 3px solid currentColor;
-  color: var(--primary-text);
 }
 
 .heading h1 {
+  display: inline-block;
   margin-bottom: 8px;
   padding: 16px 32px;
   border-radius: 20px;
@@ -71,27 +71,4 @@ body::-webkit-scrollbar {
   background-position: center center;
 }
 
-.button__hover {
-  display: flex;
-  justify-content: center;
-}
-.button__hover a {
-  display: inline-block;
-  min-width: 200px;
-  padding: 16px 32px;
-  border-radius: 10px;
-  border: 5px solid white;
-  margin-top: 16px;
-  background-color: var(--secondary-color);
-  text-decoration: none;
-  color: var(--secondary-text);
-  font-family: var(--roboto-font);
-  font-size: 1.6rem;
-  text-align: center;
-  outline: 5px solid var(--secondary-color);
-  transition: background-color 0.3s ease-in, outline 0.3s ease-in;
-}
-.button__hover:hover a{
-  background-color: var(--primary-color-low);
-  outline: 5px solid var(--primary-color-low);
-}
+/* Font */

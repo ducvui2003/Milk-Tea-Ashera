@@ -465,14 +465,13 @@ html {
   padding: 24px 0 24px 24px;
   text-align: left;
 }
-#footer .footer--info .footer--info-time {
-  flex: 1;
-}
-#footer .footer--info .footer--info-time p {
-  display: block;
+#footer .footer--info .footer--info-time + {
   margin-top: 16px;
 }
-
+#footer .footer--info .footer--info-time h2,
+#footer .footer--info .footer--info-time p {
+  display: block;
+}
 #footer .footer--info .footer--info-time h2 {
   font-family: var(--roboto-font);
   font-size: 2rem;
@@ -494,7 +493,6 @@ html {
   margin: 0;
 }
 #footer .footer--info .footer--info-contact {
-  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

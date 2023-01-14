@@ -219,6 +219,6 @@
 }
 #navigate
   .navigate__mobile:has(
-    > .navigate__list .navigate__mobile-link a:target:has(.navigate__mobile)
+    .navigate__list .navigate__mobile-link a:target:has(.navigate__mobile)
   ) {
 }

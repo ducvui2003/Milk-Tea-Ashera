@@ -1,0 +1,120 @@
+@media screen and (min-width: 1920px) {
+  #content {
+    padding-inline: 500px;
+  }
+}
+/* Mobile: width < 740px */
+/*  Tablet: width >=740px and < 1024px */
+/* PC: width>= 1024px */
+
+/* 14 inch = 1280 px width */
+/* Mobile */
+@media only screen and (max-width: 46.1875em) {
+}
+/* Tablet */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+  .navigate__logoMobile {
+    display: none;
+  }
+}
+/* Mobile and Tablet */
+@media only screen and (max-width: 63.9375em) {
+  .navigate__mobile-btn {
+    display: block;
+  }
+  .navigate__pc {
+    display: none;
+  }
+  #navigate {
+  }
+}
+/* PC */
+@media only screen and (min-width: 64em) {
+  .navigate__mobile-btn {
+    display: none;
+  }
+}
+/* Navigate mobile  */
+.navigate__mobile-btn {
+  color: var(--secondary-color);
+  font-size: 28px;
+  font-weight: 600;
+}
+.navigate__mobile-btn:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+.navigate__input {
+}
+.navigate__overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  animation: fadeIn linear 0.2s;
+}
+
+.navigate__mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  width: 320px;
+  max-width: 100%;
+  background-color: var(--primary-color-low);
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all linear 0.2s;
+}
+.navigate__mobile .navigate__list {
+  margin: 16px;
+}
+.navigate__mobile .navigate__list .navigate__mobile-link,
+.navigate__mobile .navigate__mobile-close {
+  font-family: var(--roboto-font);
+  font-size: 1.8rem;
+  line-height: 1.4;
+  color: var(--secondary-color);
+  font-weight: 500;
+}
+.navigate__mobile .navigate__list .navigate__mobile-link .icon {
+  margin-right: 5px;
+}
+.navigate__mobile .nav__list .navigate__mobile-link:nth-child(2) .icon,
+.navigate__mobile .nav__list .navigate__mobile-link:nth-child(4) .icon {
+  padding-inline: 1px;
+}
+.navigate__mobile .navigate__mobile-close {
+  font-size: 2.8rem;
+  font-weight: 600;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+.navigate__input {
+  display: none;
+}
+.navigate__input:checked ~ .navigate__overlay {
+  display: block;
+}
+
+.navigate__input:checked ~ .navigate__mobile {
+  transform: translateX(0);
+  opacity: 1;
+}
+.navigate__mobile-close:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

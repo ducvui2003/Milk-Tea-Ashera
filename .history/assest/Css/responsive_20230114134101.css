@@ -166,10 +166,10 @@
   .navigate__mobile-link
   + .navigate__mobile-link {
   margin-top: 10px;
+  text-decoration: none;
 }
 .navigate__mobile .navigate__list .navigate__mobile-link a {
   text-decoration: none;
-  color: var(--secondary-color);
 }
 .navigate__mobile .navigate__list .navigate__mobile-link .icon {
   margin-right: 5px;
@@ -216,9 +216,4 @@
   font-family: var(--roboto-font);
   font-size: 2rem;
   font-weight: 500;
-}
-#navigate
-  .navigate__mobile:has(
-    > .navigate__list .navigate__mobile-link a:target:has(.navigate__mobile)
-  ) {
 }

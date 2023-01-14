@@ -282,6 +282,27 @@ html {
 .menu--items .menu--item:last-child {
   background-image: url(../img/Food/marcos-paulo-prado-Th1Sv7-14L8-unsplash.jpg);
 }
+.button__hover a {
+  display: inline-block;
+  min-width: 200px;
+  padding: 16px 32px;
+  border-radius: 10px;
+  border: 5px solid white;
+  margin: 0 auto;
+  margin-top: 16px;
+  background-color: var(--secondary-color);
+  text-decoration: none;
+  color: var(--secondary-text);
+  font-family: var(--roboto-font);
+  font-size: 1.6rem;
+  text-align: center;
+  outline: 5px solid var(--secondary-color);
+  transition: background-color 0.3s ease-in, outline 0.3s ease-in;
+}
+.button__hover:hover {
+  background-color: var(--primary-color-low);
+  outline: 5px solid var(--primary-color-low);
+}
 
 /* Reviews */
 #content--reviews {
@@ -453,7 +474,6 @@ html {
 }
 /* Footer */
 #footer {
-  position: relative;
   display: flex;
   justify-content: space-between;
   background-color: #eedac4;
@@ -463,16 +483,17 @@ html {
   display: flex;
   justify-content: space-between;
   padding: 24px 0 24px 24px;
+
   text-align: left;
 }
 #footer .footer--info .footer--info-time {
-  flex: 1;
+  position: relative;
 }
+#footer .footer--info .footer--info-time h2,
 #footer .footer--info .footer--info-time p {
   display: block;
-  margin-top: 16px;
+  margin-bottom: 16px;
 }
-
 #footer .footer--info .footer--info-time h2 {
   font-family: var(--roboto-font);
   font-size: 2rem;
@@ -483,18 +504,15 @@ html {
   font-family: var(--lora-font);
   font-weight: 400;
   font-size: 1.6rem;
-  word-wrap: break-word;
-  line-height: 1.5;
 }
-#footer .footer--info .footer--info-time .copyright {
+#footer .footer--info .footer--info-time p:last-child {
   position: absolute;
-  left: 24px;
-  bottom: 24px;
-  font-family: var(--roboto-font);
+  bottom: 0;
+  left: 0;
   margin: 0;
+  font-family: var(--roboto-font);
 }
 #footer .footer--info .footer--info-contact {
-  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

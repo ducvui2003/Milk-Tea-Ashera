@@ -494,8 +494,8 @@ html {
   margin: 0;
 }
 #footer .footer--info .footer--info-contact {
-  flex: 1;
   display: flex;
+  flex: 1;
   flex-direction: column;
   justify-content: space-between;
 }

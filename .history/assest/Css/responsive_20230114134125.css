@@ -217,8 +217,3 @@
   font-size: 2rem;
   font-weight: 500;
 }
-#navigate
-  .navigate__mobile:has(
-    > .navigate__list .navigate__mobile-link a:target:has(.navigate__mobile)
-  ) {
-}
