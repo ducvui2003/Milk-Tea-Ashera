@@ -1,0 +1,23 @@
+body {
+  background-color: var(--primary-color);
+  height: 100vh;
+}
+
+.main {
+height: 100%;
+position: relative;
+}
+.login{
+    background-color: white;
+}
+.login input{
+display: block;
+width: 100%;
+}
+.login .login__forgetPassword{
+    text-align: right;
+    display: block;
+}
+.login .login__other{
+    height: 100px;
+}

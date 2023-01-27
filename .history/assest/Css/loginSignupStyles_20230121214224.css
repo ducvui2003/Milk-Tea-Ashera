@@ -1,0 +1,9 @@
+body {
+  background-color: var(--primary-color);
+  height: 100vh;
+}
+
+.main {
+height: 100%;
+position: relative;
+}
